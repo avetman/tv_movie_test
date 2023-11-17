@@ -1,0 +1,64 @@
+.MainMenu {
+    height:100vh;
+    display:flex;
+    flex: 0 0 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition:0.3s;
+}
+.MenuIcons{
+    display:flex;
+    justify-content: center;
+}
+.menuIcon{
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:3.5rem;
+    height:3.5rem;
+    margin:1rem 0;
+    transition: transform 0.3s ease;
+}
+.MainMenu.expanded .menuIcon{
+    width:100%;
+    justify-content: space-around;
+}
+.menuIcon img{
+    width:18px;
+}
+.menuIcon.active{
+    transform: scale(1.1);
+    background-color: #213547;
+    border-radius: 50%;
+}
+.MainMenu.expanded{
+    transition:0.3s;
+    justify-content: space-around;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .8) 80%);
+}
+.MainMenu.expanded .menuIcon{
+    height:2.5rem;
+}
+.MainMenu.expanded .menuIcon:hover{
+    background-color: rgba(10,50,100,.3);
+    width:100%;
+    border-radius: 10px;
+}
+.MainMenu.expanded .active{
+    width:100%;
+    border-radius: 10px;
+}
+.MainMenu span{
+   display:none;
+}
+.MainMenu.expanded span {
+    display: block;
+}
+
+.bottomMenu{
+    justify-content: flex-end;
+}

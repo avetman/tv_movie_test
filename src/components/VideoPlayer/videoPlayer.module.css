@@ -1,0 +1,14 @@
+.videoPlayer{
+    width:100%;
+    height:100%;
+    z-index:0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+.videoPlayer video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}

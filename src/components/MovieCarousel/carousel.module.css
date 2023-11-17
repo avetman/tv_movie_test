@@ -1,0 +1,52 @@
+/* MovieCarousel.css */
+
+.carouselContainer {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.movieItem{
+    flex: 0 0 12.5%; /* 8 items per row */
+    margin-right: 1%; /* Adjust as needed for spacing */
+}
+.carouselContainer button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,.5);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button.prev {
+    left: 10px;
+}
+button.prev img{
+    transform: rotate(270deg);
+}
+button.next {
+    right: 10px;
+}
+button.next img{
+    transform: rotate(90deg);
+}

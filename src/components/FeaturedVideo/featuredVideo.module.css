@@ -1,0 +1,49 @@
+.featuredVideo{
+    display:flex;
+
+}
+.videoCover{
+    position:absolute;
+    z-index:0;
+    left:0;
+    top:0;
+    width:100%;
+    object-fit: cover;
+}
+.videoInfo{
+    width:40%;
+    padding:1rem;
+    z-index:2;
+    font-size:20px;
+}
+.category{
+    display:block;
+    color: gray;
+    font-size:22px;
+    font-weight: 500;
+}
+.movieSpecs > *{
+    padding:5px;
+}
+.description{
+
+}
+.titleImage{
+    width:100%;
+}
+.actionButtons{
+    display:flex;
+
+}
+.playButton{
+    font-weight: bold;
+    background-color: #f9f9f9;
+    color: #000;
+}
+.playButton svg{
+    margin-right: 5px;
+}
+.moreInfo{
+    background-color: mediumblue;
+    margin-left:1rem;
+}
